@@ -1,4 +1,4 @@
-	section.list {
+section.list {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
 	grid-auto-rows: minmax(100px, auto);
@@ -15,7 +15,19 @@ section.list > div
 {
 width : 30%;
 }*/
-section.list article header{
+
+#home_button {
+	display:block;
+	margin:3rem;
+}
+
+.home {
+	background-color: red;
+	text-align: center; 
+	margin: 2rem;
+}
+
+section.list article header {
 	text-align:center;
 }
 section.list article{
@@ -25,6 +37,10 @@ section.list img {
 	display:inline-block;
 
 }
+
+section.login {
+	box-shadow: 10px 10px 5px grey;
+}
 .short-text {
 	overflow: hidden;
 	white-space: nowrap;
@@ -32,3 +48,104 @@ section.list img {
 	text-align:center;
 }
 
+.overview_container {
+	display: grid;
+	align-items: start; 
+	grid-template-columns: auto 1fr;
+	column-gap: 1em;
+}
+
+.overview_texte p {
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+.saisons_texte p {
+	color: rgb(127, 127, 127);
+}
+
+.saisons_container {
+	display: grid;
+	align-items: start; 
+	grid-template-columns: auto 1fr;
+	column-gap: 1em;
+	transition: transform 0.3s ease; 
+}
+
+.episodes_container {
+	display: grid;
+	align-items: start; 
+	grid-template-columns: auto 1fr;
+	column-gap: 1em;
+}
+
+.saisons_container:hover {
+	transform: scale(1.06);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.episode_test p {
+	font-weight: normal;
+}
+
+
+.separation {
+	margin-left: 25rem;
+	margin-right: 25rem;	
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+
+.star-rating {
+    direction: rtl;
+    display: inline-flex;
+    font-size: 3rem;
+    justify-content: center;
+    position: relative;
+}
+
+.star-rating input[type="radio"] {
+    all: unset;
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+.star-rating label {
+    color: #999;
+    cursor: pointer;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: rgba(255, 217, 0, 0.703);
+    text-shadow: 0 0 10px rgba(255, 217, 0, 0.724);
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+    color: rgba(255, 217, 0, 0.92);
+    text-shadow: 0 0 10px rgba(255, 217, 0, 0.861);
+}
+
+.star-rating {
+	display: flex;
+	align-items: center;
+	margin: 3rem;
+}
+
+#texte {
+	margin-top: 2rem;
+}
+
+.valider {
+	margin-top: 2rem;
+	margin-left: 75%;
+	width: 25%;
+}
