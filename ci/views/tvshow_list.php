@@ -1,10 +1,12 @@
 <h6>Liste des séries</h6>
 <section class="list">
 <?php
+// VIEW
+
 foreach($tvshow as $show){
 	echo "<article>";
 	echo "<header class='short-text'>";
-	echo anchor("","{$show->name}");
+	echo anchor("ListeSaisons/index/{$show->id}","{$show->name}");
 	echo "</header>";
 	echo '<img src="data:image/jpeg;base64,'.base64_encode($show->jpeg).'" />';
 	echo "<footer class='short-text'>{$show->nb} saisons</footer>";
