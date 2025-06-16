@@ -1,0 +1,38 @@
+.action{
+text-align : right;
+}
+.action a {
+	margin-right : 1rem;
+}
+table {
+
+font-size : 1.5rem;
+}
+
+form {
+	padding:1rem;
+}
+
+label, input {
+	font-size: larger;
+}
+
+
+article {
+	border-radius: 10px;
+}
+
+.container {
+	padding : 10rem;
+	width: 50rem;
+}
+
+button {
+	margin-top:1rem;
+}
+
+
+#connexion {
+	padding: 2rem;
+	text-align: center;
+}
